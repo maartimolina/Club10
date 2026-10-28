@@ -340,7 +340,7 @@ export default function App() {
       >
         <div className="relative mx-auto flex max-w-7xl items-center justify-between">
           <a href="#inicio" className="flex items-center gap-3" aria-label="Club 10 inicio">
-            <img src={logo} alt="Club 10" className="max-h-10 w-auto object-contain" />
+            <img src={logo} alt="Club 10" className="max-h-11 w-auto object-contain" />
           </a>
 
           <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center rounded-full border border-slate-700/40 bg-[#1D2B4A]/60 px-8 py-2 shadow-inner backdrop-blur-sm">
@@ -534,7 +534,7 @@ export default function App() {
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div className="mb-10 text-center">
               <p className="mb-3 text-sm font-semibold uppercase tracking-[0.22em] text-blueAccent">El Método</p>
-              <h2 className="font-serif text-4xl text-white sm:text-5xl">Por qué elegir Club 10</h2>
+              <h2 className="font-serif text-4xl text-white sm:text-5xl">¿Por qué elegir Club 10?</h2>
             </div>
 
             <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-4 md:grid-cols-3">
