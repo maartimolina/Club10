@@ -252,6 +252,7 @@ export default function App() {
   const [contactCourse, setContactCourse] = useState('')
   const [contactMessage, setContactMessage] = useState('')
   const [showContactErrors, setShowContactErrors] = useState(false)
+  const [showPrivacyNotice, setShowPrivacyNotice] = useState(false)
 
   const handleContactSubmit = (event) => {
     event.preventDefault()
@@ -298,6 +299,17 @@ export default function App() {
 
     return () => clearInterval(interval)
   }, [])
+
+  useEffect(() => {
+    if (!showPrivacyNotice) return
+
+    const handlePrivacyKeyDown = (event) => {
+      if (event.key === 'Escape') setShowPrivacyNotice(false)
+    }
+
+    document.addEventListener('keydown', handlePrivacyKeyDown)
+    return () => document.removeEventListener('keydown', handlePrivacyKeyDown)
+  }, [showPrivacyNotice])
 
   const rotatingAudiences = ['Adultos', 'Adolescentes', 'Niños']
 
@@ -683,6 +695,16 @@ export default function App() {
                   >
                     Enviar consulta
                   </button>
+                  <p className="mt-3 text-center text-xs leading-relaxed text-slate-500">
+                    Al enviar, abrís WhatsApp con tus datos.{' '}
+                    <button
+                      type="button"
+                      onClick={() => setShowPrivacyNotice(true)}
+                      className="font-semibold text-[#111E38] underline decoration-[#EC5D96] underline-offset-2"
+                    >
+                      Privacidad
+                    </button>
+                  </p>
                 </div>
               </form>
             </div>
@@ -691,7 +713,7 @@ export default function App() {
       </main>
 
       <footer id="footer" className="border-t border-gray-800/50 bg-[#0B132B] px-6 py-6 text-xs text-gray-400 sm:px-12">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 md:flex-row">
+        <div className="relative mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 md:min-h-8 md:flex-row">
           <div className="flex items-center gap-3">
             <span className="text-xl font-black italic tracking-tight text-white">
               Club<span className="text-[#EC5D96]">10</span>
@@ -700,13 +722,86 @@ export default function App() {
             <span className="text-xs text-gray-400">Academia de Inglés</span>
           </div>
 
-          <p className="max-w-[calc(100%-5rem)] self-start text-gray-400 md:max-w-none md:self-auto md:text-center">
+          <p className="text-center text-gray-400 md:absolute md:left-1/2 md:-translate-x-1/2 md:whitespace-nowrap">
             © 2026 Club 10. Todos los derechos reservados.
           </p>
 
-          <div className="hidden pr-28 md:block" aria-hidden="true" />
         </div>
       </footer>
+
+      {showPrivacyNotice && (
+        <div
+          className="fixed inset-0 z-[60] flex items-center justify-center bg-[#111E38]/65 p-4 backdrop-blur-sm"
+          onClick={(event) => {
+            if (event.target === event.currentTarget) setShowPrivacyNotice(false)
+          }}
+        >
+          <section
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="privacy-title"
+            className="w-full max-w-2xl overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl"
+          >
+            <header className="flex items-start justify-between gap-6 border-b border-slate-100 px-5 py-4 sm:px-7">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#EC5D96]">Club 10</p>
+                <h2 id="privacy-title" className="mt-1 font-serif text-2xl text-[#111E38]">Privacidad</h2>
+              </div>
+              <button
+                type="button"
+                autoFocus
+                onClick={() => setShowPrivacyNotice(false)}
+                aria-label="Cerrar aviso de privacidad"
+                className="rounded-lg px-3 py-1 text-2xl leading-none text-slate-500 transition-colors hover:bg-slate-100 hover:text-[#111E38]"
+              >
+                ×
+              </button>
+            </header>
+
+            <div className="max-h-[70vh] space-y-4 overflow-y-auto px-5 py-5 text-sm leading-relaxed text-slate-600 sm:px-7">
+              <section>
+                <h3 className="font-semibold text-[#111E38]">Formulario y WhatsApp</h3>
+                <p className="mt-1">
+                  Al enviar, tu nombre, teléfono, curso y mensaje se incluyen en un enlace dirigido a Club 10. WhatsApp recibe esos datos al abrirlo; el mensaje se envía cuando lo confirmas. Esta web no guarda los envíos.
+                </p>
+                <a
+                  href="https://www.whatsapp.com/legal/privacy-policy?lang=es_LA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-block font-semibold text-[#111E38] underline decoration-[#EC5D96] underline-offset-2"
+                >
+                  Política de privacidad de WhatsApp
+                </a>
+              </section>
+
+              <section>
+                <h3 className="font-semibold text-[#111E38]">Mapa y cookies</h3>
+                <p className="mt-1">
+                  El mapa de Google puede recibir datos técnicos, como tu IP, y usar sus propias cookies. Esta web no instala cookies propias ni usa analítica.
+                </p>
+                <a
+                  href="https://policies.google.com/privacy?hl=es"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-block font-semibold text-[#111E38] underline decoration-[#EC5D96] underline-offset-2"
+                >
+                  Política de privacidad de Google
+                </a>
+              </section>
+
+              <section>
+                <h3 className="font-semibold text-[#111E38]">Contacto</h3>
+                <p className="mt-1">
+                  Dudas sobre privacidad: {' '}
+                  <a href="mailto:Club10.lacalera@gmail.com" className="font-semibold text-[#111E38] underline decoration-[#EC5D96] underline-offset-2">
+                    Club10.lacalera@gmail.com
+                  </a>.
+                </p>
+              </section>
+            </div>
+          </section>
+        </div>
+      )}
 
       {showFloatingCta && (
         <a
