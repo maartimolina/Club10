@@ -157,28 +157,28 @@ function CourseCard({ course }) {
           className="absolute inset-0 flex h-full flex-col justify-between rounded-3xl border border-slate-100 bg-white p-6 shadow-md transition-all duration-300 hover:shadow-xl"
         >
           <div>
-            <div className="mb-6 flex items-center justify-between gap-3">
+            <div className="mb-7 flex items-center justify-between gap-3">
               <img
                 src={course.icon}
                 alt={course.stickerAlt}
-                className={`h-14 w-14 object-contain ${course.stickerClass}`}
+                className={`h-16 w-16 object-contain ${course.stickerClass}`}
               />
-              <span className="rounded-full bg-[#EC5D96]/10 px-3 py-1 text-xs font-bold text-[#EC5D96] sm:text-sm">
+              <span className="rounded-full bg-[#EC5D96]/10 px-4 py-1.5 text-sm font-bold text-[#EC5D96] sm:text-base">
                 {course.age}
               </span>
             </div>
 
-            <h3 className="mb-2 break-words font-serif text-2xl font-bold leading-tight text-[#111E38]">
+            <h3 className="mb-3 break-words font-serif text-3xl font-bold leading-tight text-[#111E38]">
               {course.title}
             </h3>
-            <p className="mb-3 text-sm font-semibold leading-relaxed text-[#111E38]">{course.subtitle}</p>
-            <p className="text-sm leading-relaxed text-slate-600">{course.description}</p>
+            <p className="mb-4 text-base font-semibold leading-relaxed text-[#111E38]">{course.subtitle}</p>
+            <p className="text-base leading-relaxed text-slate-600">{course.description}</p>
           </div>
 
           <button
             type="button"
             onClick={() => setIsFlipped(true)}
-            className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-[#111E38] transition-colors hover:bg-slate-100"
+            className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3.5 text-base font-medium text-[#111E38] transition-colors hover:bg-slate-100"
           >
             Ver programa completo ↻
           </button>
