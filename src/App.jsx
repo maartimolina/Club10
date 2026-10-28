@@ -15,56 +15,112 @@ const navItems = [
 
 const courses = [
   {
-    title: 'Inglés para Niños y Adolescentes',
-    subtitle: 'Comienzo temprano y conversación natural.',
-    description:
-      'Un espacio cercano para construir confianza, vocabulario y oralidad desde el primer día.',
-    accent: 'bg-[#FDFBF7] text-[#111E38]',
+    title: 'EXPLORERS',
+    age: '4–5 años',
+    subtitle: 'Aprender jugando y explorando',
+    description: 'En esta etapa el primer contacto con el inglés se construye a través de experiencias breves, repetitivas y muy visuales.',
+    methodology: [
+      'Canciones, rimas y movimiento',
+      'Juegos con objetos e imágenes',
+      'Cuentos y personajes',
+      'Arte y exploración sensorial',
+      'Rutinas simples en inglés',
+    ],
+    objective: 'Reconocer sonidos y palabras, comprender expresiones simples y animarse a repetir pequeñas frases, disfrutando del inglés sin presión escolar.',
     icon: stickerOne,
     stickerAlt: 'Sticker de Club 10 para niños',
     stickerClass: '-rotate-6',
-    levels: ['Primario', 'Secundario', 'Conversación'],
-    methodology: 'Acompañamiento cercano, práctica guiada y confianza para hablar desde el inicio.',
-    schedule: 'Turnos mañana y tarde · grupos reducidos',
-    tags: ['Niños', 'Conversación', 'Inicio temprano'],
-    featured: false,
-    buttonClass: 'border-2 border-[#111E38] text-[#111E38] hover:bg-[#111E38] hover:text-white',
-    whatsappMessage: 'Hola! Me interesa consultar horarios para Inglés Niños y Adolescentes.',
+    whatsappMessage: 'Hola! Me interesa consultar por el curso EXPLORERS para niños de 4–5 años.',
   },
   {
-    title: 'Inglés para Adultos y Jóvenes',
-    subtitle: 'Fluidez, conversación y nivelación real.',
-    description:
-      'Programas pensados para avanzar con soltura, confianza y práctica constante en la vida diaria.',
-    accent: 'bg-[#111E38] text-white',
+    title: 'EXPLORERS',
+    age: '6–7 años',
+    subtitle: 'Aprender jugando y descubriendo',
+    description: 'Mantenemos el juego como herramienta principal, pero comenzamos a incorporar mayor participación, autonomía y producción en inglés.',
+    methodology: [
+      'Canciones y juegos comunicativos',
+      'Desafíos de vocabulario',
+      'Cuentos y proyectos creativos',
+      'Preguntas y respuestas sencillas',
+      'Primeras prácticas de lectura y escritura',
+    ],
+    objective: 'Ampliar vocabulario, seguir consignas y producir frases cortas con seguridad. El material propio acompaña el juego y las experiencias.',
     icon: stickerTwo,
     stickerAlt: 'Sticker de Club 10 para adultos',
     stickerClass: 'rotate-3',
-    levels: ['Desde cero', 'Intermedio', 'Intensivo'],
-    methodology: 'Enfoque oral, práctica comunicativa y coaching para avanzar con autonomía.',
-    schedule: 'Turnos flexibles · grupos reducidos',
-    tags: ['Fluidez', 'Conversación', 'Nivelación'],
-    featured: true,
-    badge: 'Más elegido',
-    buttonClass: 'bg-[#EC5D96] text-white hover:bg-[#d44c82] shadow-lg',
-    whatsappMessage: 'Hola! Me interesa consultar horarios para Inglés Adultos y Jóvenes.',
+    whatsappMessage: 'Hola! Me interesa consultar por el curso EXPLORERS para niños de 6–7 años.',
   },
   {
-    title: 'Preparación de Exámenes y Apoyo Particular',
-    subtitle: 'Recuperación, foco y estrategia para objetivos reales.',
-    description:
-      'Acompañamiento para exámenes, colegio y facultad con planificación clara y seguimiento puntual.',
-    accent: 'bg-[#FDFBF7] text-[#111E38]',
+    title: 'ADVENTURERS',
+    age: '8–10 años',
+    subtitle: 'Aprender descubriendo',
+    description: 'A esta edad incorporamos más desafíos y situaciones en las que los chicos necesitan usar el inglés para resolver, jugar y comunicarse.',
+    methodology: [
+      'Juegos comunicativos y desafíos',
+      'Conversaciones sencillas',
+      'Lectura y escritura progresivas',
+      'Canciones y videos',
+      'Proyectos creativos en equipo',
+    ],
+    objective: 'Usar el inglés con mayor autonomía, ampliar vocabulario y desarrollar comprensión y expresión oral y escrita.',
     icon: stickerThree,
     stickerAlt: 'Sticker de Club 10 para apoyo académico',
     stickerClass: 'rotate-2',
-    levels: ['IELTS', 'TOEFL', 'Colegio y facultad'],
-    methodology: 'Planificación personalizada, estrategias y corrección enfocada en resultados reales.',
-    schedule: 'Clases puntuales y acompañamiento individual',
-    tags: ['Exámenes', 'Colegio', 'Facultad'],
-    featured: false,
-    buttonClass: 'border-2 border-[#111E38] text-[#111E38] hover:bg-[#111E38] hover:text-white',
-    whatsappMessage: 'Hola! Quisiera consultar por Preparación de Exámenes y Apoyo Particular.',
+    whatsappMessage: 'Hola! Me interesa consultar por el curso ADVENTURERS para chicos de 8 a 10 años.',
+  },
+  {
+    title: 'DISCOVERERS',
+    age: '11–13 años',
+    subtitle: 'Aprender comunicándose',
+    description: 'En esta etapa el foco empieza a estar mucho más puesto en comunicarse en situaciones reales.',
+    methodology: [
+      'Conversación',
+      'Reading & comprehension',
+      'Writing',
+      'Cultura y situaciones cotidianas',
+      'Recursos audiovisuales y proyectos grupales',
+    ],
+    objective: 'Expresar ideas y experiencias mientras incorporan vocabulario y estructuras gramaticales de forma progresiva.',
+    icon: stickerOne,
+    stickerAlt: 'Sticker de Club 10',
+    stickerClass: '-rotate-6',
+    whatsappMessage: 'Hola! Me interesa consultar por el curso DISCOVERERS para chicos de 11–13 años.',
+  },
+  {
+    title: 'COMMUNICATORS',
+    age: '14–18 años',
+    subtitle: 'Mundo real',
+    description: 'Acá el inglés se vuelve cada vez más una herramienta para expresar ideas, comprender contenido y desenvolverse en situaciones reales.',
+    methodology: [
+      'Conversaciones y debates',
+      'Series, películas y música',
+      'Cultura y actualidad',
+      'Reading / Writing',
+      'Proyectos colaborativos y apoyo académico',
+    ],
+    objective: 'Desarrollar fluidez y confianza, integrando gramática, vocabulario, comprensión y producción escrita.',
+    icon: stickerTwo,
+    stickerAlt: 'Sticker de Club 10',
+    stickerClass: 'rotate-3',
+    whatsappMessage: 'Hola! Me interesa consultar por el curso COMMUNICATORS para jóvenes de 14–18 años.',
+  },
+  {
+    title: 'CONNECT',
+    age: 'Adultos',
+    subtitle: 'Inglés para conectar',
+    description: 'Una propuesta pensada para adultos que quieren ganar confianza y poder utilizar el inglés en situaciones reales, sin miedo a equivocarse.',
+    methodology: [
+      'Conversación y situaciones cotidianas',
+      'Inglés para el trabajo y los viajes',
+      'Audios, podcasts y contenido audiovisual',
+      'Series, películas, canciones y cultura',
+      'Lectura, escritura y actividades grupales',
+    ],
+    objective: 'Sentirse capaz de usar inglés en situaciones reales, con confianza y sin miedo a equivocarse.',
+    icon: stickerThree,
+    stickerAlt: 'Sticker de Club 10',
+    stickerClass: 'rotate-2',
+    whatsappMessage: 'Hola! Me interesa consultar por el curso CONNECT para adultos.',
   },
 ]
 
@@ -98,69 +154,34 @@ function CourseCard({ course }) {
       >
         <div
           style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden' }}
-          className={`absolute inset-0 h-full w-full overflow-hidden rounded-3xl bg-white p-5 sm:p-8 shadow-sm ${
-            course.featured ? 'border-2 border-[#EC5D96] shadow-xl' : 'border border-gray-100'
-          }`}
+          className="absolute inset-0 flex h-full flex-col justify-between rounded-3xl border border-slate-100 bg-white p-6 shadow-md transition-all duration-300 hover:shadow-xl"
         >
-          {course.featured && (
-            <span className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-[#EC5D96] px-4 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-white shadow-sm">
-              MÁS ELEGIDO
-            </span>
-          )}
-
-          <div className="flex h-full flex-col justify-between">
-            <div>
-              <div className="mb-5 flex items-start justify-between">
-                <div className="flex-1">
-                  <img
-                    src={course.icon}
-                    alt={course.stickerAlt}
-                    className={`h-14 w-auto object-contain ${course.stickerClass}`}
-                  />
-                </div>
-              </div>
-
-              <div className="mb-4">
-                <h3 className="font-serif text-3xl leading-tight text-[#111E38]">{course.title}</h3>
-              </div>
-
-              <div className="mb-5 flex flex-wrap">
-                {course.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="mb-2 mr-2 inline-block rounded-full bg-[#EC5D96]/10 px-3 py-1.5 text-[10px] font-medium text-[#111E38]"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-
-              <p className="text-base leading-relaxed text-[#111E38]/75">{course.description}</p>
+          <div>
+            <div className="mb-6 flex items-center justify-between gap-3">
+              <img
+                src={course.icon}
+                alt={course.stickerAlt}
+                className={`h-14 w-14 object-contain ${course.stickerClass}`}
+              />
+              <span className="rounded-full bg-[#EC5D96]/10 px-3 py-1 text-xs font-bold text-[#EC5D96] sm:text-sm">
+                {course.age}
+              </span>
             </div>
 
-            <div className="mt-6 flex flex-col gap-3">
-              <button
-                type="button"
-                onClick={() => setIsFlipped(true)}
-                className="flex cursor-pointer items-center justify-center gap-1 py-2 text-xs font-bold text-[#111E38] transition-colors hover:text-[#EC5D96]"
-              >
-                <span>Ver más información ↺</span>
-              </button>
-
-              <a
-                href={`https://wa.me/5493512677348?text=${encodeURIComponent(course.whatsappMessage)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`mb-2 inline-flex w-full items-center justify-center rounded-full py-3 text-center text-sm font-semibold transition-all duration-300 ease-out hover:scale-[1.01] ${
-                  course.featured
-                    ? 'bg-[#EC5D96] text-white hover:bg-[#d44c82]'
-                    : 'border-2 border-[#111E38] text-[#111E38] hover:bg-[#111E38] hover:text-white'
-                }`}
-              >
-                Consultar horarios
-              </a>
-            </div>
+            <h3 className="mb-2 break-words font-serif text-2xl font-bold leading-tight text-[#111E38]">
+              {course.title}
+            </h3>
+            <p className="mb-3 text-sm font-semibold leading-relaxed text-[#111E38]">{course.subtitle}</p>
+            <p className="text-sm leading-relaxed text-slate-600">{course.description}</p>
           </div>
+
+          <button
+            type="button"
+            onClick={() => setIsFlipped(true)}
+            className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-[#111E38] transition-colors hover:bg-slate-100"
+          >
+            Ver programa completo ↻
+          </button>
         </div>
 
         <div
@@ -169,64 +190,50 @@ function CourseCard({ course }) {
             WebkitBackfaceVisibility: 'hidden',
             transform: 'rotateY(180deg)',
           }}
-          className="absolute inset-0 flex h-full w-full flex-col justify-between rounded-3xl bg-[#111E38] p-5 sm:p-8 text-white shadow-xl"
+          className="absolute inset-0 flex h-full flex-col justify-between rounded-3xl bg-[#111E38] p-6 text-white shadow-2xl"
         >
-          <div>
+          <div className="flex-1 pr-1">
             <div className="mb-4 border-b border-white/10 pb-3 text-left">
-              <span className="text-[10px] font-bold tracking-[0.2em] text-[#EC5D96] uppercase">PROPUESTA EDUCATIVA</span>
-              <h4 className="mt-1 font-serif text-xl font-semibold text-white">{course.title}</h4>
+              <h4 className="break-words font-serif text-xl font-semibold leading-tight text-white">{course.title}</h4>
+              <span className="mt-2 inline-block text-sm font-semibold text-[#EC5D96]">{course.age}</span>
             </div>
 
-            <div className="my-auto space-y-4 text-left">
+            <div className="space-y-3 text-left">
               <div>
-                <p className="mb-1.5 text-[10px] font-bold tracking-[0.2em] text-[#EC5D96] uppercase">• Niveles</p>
-                <div className="flex flex-wrap gap-1.5">
-                  {course.levels.map((nivel) => (
-                    <span
-                      key={nivel}
-                      className="rounded-full border border-white/10 bg-white/10 px-2.5 py-1 text-xs text-white"
-                    >
-                      {nivel}
-                    </span>
+                <p className="mb-1.5 text-xs font-bold uppercase tracking-wider text-white/80">Metodología</p>
+                <ul className="space-y-1 text-xs leading-relaxed text-slate-200 sm:text-sm">
+                  {course.methodology.map((item) => (
+                    <li key={item} className="flex items-start gap-2">
+                      <span className="font-semibold text-[#EC5D96]">✓</span>
+                      <span>{item}</span>
+                    </li>
                   ))}
-                </div>
-              </div>
-
-              <div>
-                <p className="mb-1.5 text-[10px] font-bold tracking-[0.2em] text-[#EC5D96] uppercase">• Metodología &amp; Dinámica</p>
-                <ul className="space-y-1 text-xs text-gray-300">
-                  <li className="flex items-center gap-1.5"><span className="text-[#EC5D96]">✓</span> Grupos reducidos para atención personalizada</li>
-                  <li className="flex items-center gap-1.5"><span className="text-[#EC5D96]">✓</span> Práctica guiada con enfoque 100% conversacional</li>
-                  <li className="flex items-center gap-1.5"><span className="text-[#EC5D96]">✓</span> Materiales y seguimiento individual</li>
                 </ul>
               </div>
 
               <div>
-                <p className="mb-1 text-[10px] font-bold tracking-[0.2em] text-[#EC5D96] uppercase">• Horarios Disponibles</p>
-                <p className="rounded-xl border border-white/10 bg-white/5 p-2.5 text-xs text-gray-200">
-                  Turnos mañana y tarde · Grupos reducidos por nivel
-                </p>
+                <p className="mb-2 text-xs font-bold uppercase tracking-wider text-white/80">Objetivo</p>
+                <p className="text-xs leading-relaxed text-slate-200 sm:text-sm">{course.objective}</p>
               </div>
             </div>
           </div>
 
-          <div className="mt-4 flex flex-col gap-3">
-            <button
-              type="button"
-              onClick={() => setIsFlipped(false)}
-              className="my-2 block w-full cursor-pointer text-center text-xs text-gray-400 transition-colors hover:text-[#EC5D96]"
-            >
-              ← Volver al frente
-            </button>
-
+          <div className="mt-4 flex shrink-0 flex-col gap-2">
             <a
               href={`https://wa.me/5493512677348?text=${encodeURIComponent(course.whatsappMessage)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="mb-2 inline-flex w-full items-center justify-center rounded-full bg-[#EC5D96] py-3 text-center text-sm font-semibold text-white transition hover:bg-[#d44c82]"
+              className="inline-flex w-full items-center justify-center rounded-2xl bg-[#EC5D96] py-3 text-center text-sm font-semibold text-white shadow-lg transition-all hover:bg-[#d64b82]"
             >
-              Consultar horarios
+              Consultar horarios por WhatsApp
             </a>
+            <button
+              type="button"
+              onClick={() => setIsFlipped(false)}
+              className="block w-full cursor-pointer py-1 text-center text-xs text-white/70 transition-colors hover:text-white"
+            >
+              ← Volver al frente
+            </button>
           </div>
         </div>
       </div>
@@ -240,6 +247,28 @@ export default function App() {
   const [isOpen, setIsOpen] = useState(false)
   const [isHeaderVisible, setIsHeaderVisible] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
+  const [contactName, setContactName] = useState('')
+  const [contactPhone, setContactPhone] = useState('')
+  const [contactCourse, setContactCourse] = useState('')
+  const [contactMessage, setContactMessage] = useState('')
+  const [showContactErrors, setShowContactErrors] = useState(false)
+
+  const handleContactSubmit = (event) => {
+    event.preventDefault()
+
+    if (!contactName.trim() || !contactPhone.trim() || !contactCourse) {
+      setShowContactErrors(true)
+      return
+    }
+
+    setShowContactErrors(false)
+
+    const numeroWhatsApp = '5493512677348'
+    const texto = `Hola Club 10, quiero hacer una consulta. Soy ${contactName.trim()} y estoy interesado/a en ${contactCourse}. ${contactMessage.trim() || 'Quisiera recibir más información sobre horarios y disponibilidad.'} Muchas gracias.`
+    const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`
+
+    window.open(url, '_blank', 'noopener,noreferrer')
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -412,7 +441,7 @@ export default function App() {
           </div>
         </section>
 
-        <section id="propuestas" className="relative mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
+        <section id="propuestas" className="relative mx-auto max-w-[90rem] px-4 py-20 sm:px-6 lg:px-8">
           <img src={alegria} alt="" className="pointer-events-none absolute -left-2 top-8 hidden w-16 md:block" />
           <img src={subir} alt="" className="pointer-events-none absolute -right-4 top-20 hidden w-16 md:block" />
 
@@ -421,9 +450,9 @@ export default function App() {
             <h2 className="font-serif text-4xl text-navy sm:text-5xl">Propuestas educativas</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {courses.map((course) => (
-              <CourseCard key={course.title} course={course} />
+              <CourseCard key={`${course.title}-${course.age}`} course={course} />
             ))}
           </div>
         </section>
@@ -444,11 +473,15 @@ export default function App() {
           <div className="grid gap-5 md:grid-cols-12">
             <div className="md:col-span-5">
               <div className="h-full overflow-hidden rounded-[2rem] border border-navy/10 bg-white p-3 shadow-[0_18px_45px_rgba(17,30,56,0.06)]">
-                <div className="flex h-full min-h-[320px] items-center justify-center rounded-[1.5rem] bg-gradient-to-br from-blueAccent/20 via-cream to-pinkAccent/10 text-center">
-                  <div className="space-y-3 px-6">
-                    <div className="mx-auto h-16 w-16 rounded-full bg-navy text-2xl text-white">✦</div>
-                    <p className="font-serif text-3xl text-navy">Clases con alma</p>
-                    <p className="text-base text-navy/75">Espacio pensado para aprender sin presión y con acompañamiento real.</p>
+                <div className="relative h-full min-h-[320px] overflow-hidden rounded-[1.5rem]">
+                  <img
+                    src="/images/verticalAni.jpeg"
+                    alt="Docente de Club 10 junto al cartel del espacio pedagógico"
+                    className="absolute inset-0 h-full w-full object-cover"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#111E38]/90 via-[#111E38]/45 to-transparent px-5 pb-5 pt-20">
+                    <p className="font-serif text-3xl text-white">Clases con alma</p>
+                    <p className="mt-2 text-sm leading-relaxed text-white/85">Espacio pensado para aprender sin presión y con acompañamiento real.</p>
                   </div>
                 </div>
               </div>
@@ -456,29 +489,39 @@ export default function App() {
 
             <div className="md:col-span-7 grid gap-5 sm:grid-cols-2">
               <div className="overflow-hidden rounded-[2rem] border border-navy/10 bg-white p-3 shadow-[0_18px_45px_rgba(17,30,56,0.06)] sm:col-span-2">
-                <div className="h-56 rounded-[1.5rem] bg-gradient-to-r from-pinkAccent/20 via-white to-blueAccent/15 p-6">
-                  <div className="flex h-full items-end justify-between">
-                    <div>
-                      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-navy/60">Reels / momenta</p>
-                      <p className="mt-3 font-serif text-3xl text-navy">Videos y clases</p>
-                    </div>
-                    <div className="rounded-full bg-navy px-4 py-2 text-sm font-semibold text-white">▶</div>
+                <div className="aspect-video w-full overflow-hidden rounded-[1.5rem] bg-slate-950">
+                  <video
+                    src="/videos/videoAni.mp4"
+                    controls
+                    preload="metadata"
+                    playsInline
+                    className="h-full w-full rounded-2xl object-cover shadow-lg"
+                  />
+                </div>
+              </div>
+
+              <div className="overflow-hidden rounded-[2rem] border border-navy/10 bg-white p-3 shadow-[0_18px_45px_rgba(17,30,56,0.06)]">
+                <div className="relative h-52 overflow-hidden rounded-[1.5rem] bg-cream">
+                  <img
+                    src="/images/horizontalCuadernos.jpeg"
+                    alt="Cuadernos abiertos durante una actividad de estudio"
+                    className="h-full w-full object-cover object-left"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#111E38]/80 to-transparent px-4 pb-4 pt-12">
+                    <p className="font-serif text-2xl text-white">Momento de estudio</p>
                   </div>
                 </div>
               </div>
 
               <div className="overflow-hidden rounded-[2rem] border border-navy/10 bg-white p-3 shadow-[0_18px_45px_rgba(17,30,56,0.06)]">
-                <div className="h-52 rounded-[1.5rem] bg-gradient-to-br from-greenAccent/25 to-cream p-4">
-                  <div className="flex h-full items-end">
-                    <p className="font-serif text-2xl text-navy">Momento de estudio</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="overflow-hidden rounded-[2rem] border border-navy/10 bg-white p-3 shadow-[0_18px_45px_rgba(17,30,56,0.06)]">
-                <div className="h-52 rounded-[1.5rem] bg-gradient-to-br from-blueAccent/20 to-pinkAccent/15 p-4">
-                  <div className="flex h-full items-end">
-                    <p className="font-serif text-2xl text-navy">Acompañamiento real</p>
+                <div className="relative h-52 overflow-hidden rounded-[1.5rem]">
+                  <img
+                    src="/images/horizontalAni.jpeg"
+                    alt="Docente acompañando a una estudiante durante una clase"
+                    className="h-full w-full object-cover"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#111E38]/80 to-transparent px-4 pb-4 pt-12">
+                    <p className="font-serif text-2xl text-white">Acompañamiento real</p>
                   </div>
                 </div>
               </div>
@@ -562,31 +605,57 @@ export default function App() {
                 </div>
               </div>
 
-              <form className="flex flex-1 flex-col justify-between" onSubmit={(event) => event.preventDefault()}>
+              <form
+                className="flex flex-1 flex-col justify-between"
+                onInvalidCapture={() => setShowContactErrors(true)}
+                onSubmit={handleContactSubmit}
+              >
                 <div className="space-y-5">
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div>
-                    <label className="mb-1 block text-sm font-medium text-navy">Nombre</label>
+                    <label htmlFor="contact-name" className="mb-1 block text-sm font-medium text-navy">Nombre</label>
                     <input
+                      id="contact-name"
                       type="text"
-                      className="w-full rounded-lg border border-gray-200 bg-cream px-3 py-2 text-sm outline-none transition focus:border-blueAccent"
+                      required
+                      value={contactName}
+                      onChange={(event) => setContactName(event.target.value)}
+                      aria-invalid={showContactErrors && !contactName.trim()}
+                      className={`w-full rounded-lg border bg-cream px-3 py-2 text-sm outline-none transition focus:border-blueAccent ${showContactErrors && !contactName.trim() ? 'border-red-500 ring-2 ring-red-200' : 'border-gray-200'}`}
                       placeholder="Tu nombre"
                     />
                   </div>
 
                   <div>
-                    <label className="mb-1 block text-sm font-medium text-navy">Teléfono</label>
+                    <label htmlFor="contact-phone" className="mb-1 block text-sm font-medium text-navy">Teléfono</label>
                     <input
+                      id="contact-phone"
                       type="tel"
-                      className="w-full rounded-lg border border-gray-200 bg-cream px-3 py-2 text-sm outline-none transition focus:border-blueAccent"
+                      required
+                      maxLength={15}
+                      value={contactPhone}
+                      onChange={(event) => setContactPhone(event.target.value)}
+                      onInput={(event) => {
+                        event.target.value = event.target.value.replace(/[^0-9+\s\-]/g, '')
+                      }}
+                      aria-invalid={showContactErrors && !contactPhone.trim()}
+                      className={`w-full rounded-lg border bg-cream px-3 py-2 text-sm outline-none transition focus:border-blueAccent ${showContactErrors && !contactPhone.trim() ? 'border-red-500 ring-2 ring-red-200' : 'border-gray-200'}`}
                       placeholder="Tu teléfono"
                     />
                   </div>
                   </div>
 
                   <div>
-                    <label className="mb-1 block text-sm font-medium text-navy">Curso de interés</label>
-                    <select className="w-full rounded-lg border border-gray-200 bg-cream px-3 py-2 text-sm outline-none transition focus:border-blueAccent">
+                    <label htmlFor="contact-course" className="mb-1 block text-sm font-medium text-navy">Curso de interés</label>
+                    <select
+                      id="contact-course"
+                      required
+                      value={contactCourse}
+                      onChange={(event) => setContactCourse(event.target.value)}
+                      aria-invalid={showContactErrors && !contactCourse}
+                      className={`w-full rounded-lg border bg-cream px-3 py-2 text-sm outline-none transition focus:border-blueAccent ${showContactErrors && !contactCourse ? 'border-red-500 ring-2 ring-red-200' : 'border-gray-200'}`}
+                    >
+                      <option value="" disabled>Selecciona un curso...</option>
                       <option>Inglés Niños / Adolescentes</option>
                       <option>Inglés Adultos</option>
                       <option>Preparación de Exámenes / Particular</option>
@@ -595,30 +664,25 @@ export default function App() {
                   </div>
 
                   <div>
-                    <label className="mb-1 block text-sm font-medium text-navy">Mensaje</label>
+                    <label htmlFor="contact-message" className="mb-1 block text-sm font-medium text-navy">Mensaje</label>
                     <textarea
+                      id="contact-message"
                       rows={3}
+                      value={contactMessage}
+                      onChange={(event) => setContactMessage(event.target.value)}
                       className="w-full rounded-lg border border-gray-200 bg-cream px-3 py-2 text-sm outline-none transition focus:border-blueAccent"
                       placeholder="Contanos cómo te podemos ayudar"
                     />
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-3 pt-4 sm:flex-row">
+                <div className="pt-4">
                   <button
                     type="submit"
-                    className="inline-flex flex-1 items-center justify-center rounded-full bg-pinkAccent px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-pink-600"
+                    className="inline-flex w-full items-center justify-center rounded-full bg-[#EC5D96] px-5 py-3 text-sm font-semibold text-white transition-all hover:bg-[#d64b82]"
                   >
                     Enviar consulta
                   </button>
-                  <a
-                    href="https://wa.me/5493512677348?text=Hola!%20Quisiera%20hacer%20una%20consulta%20desde%20la%20web."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex flex-1 items-center justify-center rounded-full bg-greenAccent px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-emerald-600"
-                  >
-                    WhatsApp
-                  </a>
                 </div>
               </form>
             </div>
